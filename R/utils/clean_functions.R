@@ -58,7 +58,7 @@ clean_files <- function(path = ".",
 clean_bat <- function(path = ".", verbose = TRUE) {
   # Remove the basic files that we don't want
   names = c("*.bar","*.eva","*.log","*.std","gradient.*",
-            "*.r0*","*.p0*","*.b0*","*.ss_new")
+            "*.r0*","*.p0*","*.b0*", "starter.ss_new", "forecast.ss_new","control.ss_new")
   clean_files(path=path,names=names,verbose=verbose)
   # Files we want to save
   filesSave <- c(
@@ -74,7 +74,8 @@ clean_bat <- function(path = ".", verbose = TRUE) {
     "ss_win~4",
     "ss_win~4",
     "warning",
-    "console.output"
+    "console.output",
+    "data_echo.ss_new"
   )
   filesSave <- list.files(path)[get_nam(list.files(path)) %in% get_nam(filesSave)]
   # Get the names of the data and control files

@@ -37,3 +37,16 @@ posterior_vector*.sso
 posterior*.sso
 rebuild.sso
 runnumber.ss
+
+# Ignore plots
+  # JPEG
+*.jpg, *.jpeg, *.jpe, *.jif, *.jfif  
+  # Portable Network Graphics
+*.png
+  # Tagged Image File Format
+*.tiff, *.tif
+  # BMP
+*.bmp, *.dib
+
+# Ignore the .html from the model directories 
+model/*/run/plots

@@ -22,7 +22,7 @@ Warning 11 : Converting asymptotic retention parameter to 1/(1+e(-x)) format for
 ++      because parm min was >=0.0
 ++      old min, max, init, prior:  0.0001 1 0.9 0.9; search for <now check> in echoinput.sso for parm_type
 Warning 12 : new min, max, init, prior:  -10 10 2.19722 2.19722
-Warning 13 : Final gradient: 0.000323901 is larger than final_conv: 0.0001
+Warning 13 : Final gradient: 0.000142988 is larger than final_conv: 0.0001
 Warning 14 : Time-vary parms not bound checked
 Warning 15 : Reminder: Number of lamdas !=0.0 and !=1.0:  2
 Note 5 Information:  N parameters that are on or within 1% of min-max bound: 9; check results, variance may be suspect

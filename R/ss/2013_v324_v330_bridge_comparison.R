@@ -87,9 +87,12 @@ run_SS(
   # A 'run' folder is created (where output files will be stored)
   copy_files = TRUE,
   # copy the input files from the oldSST_path folder
-  cleanRun = TRUE
-  # clean the folder after the run
+  cleanRun = FALSE
+  # DO NOT clean the folder after the run
 )
+
+# Clean the repertory where we run the 3.30.21 version
+clean_bat(path = file.path(SST_path, 'run', fsep = fsep))
 # -----------------------------------------------------------
 
 
